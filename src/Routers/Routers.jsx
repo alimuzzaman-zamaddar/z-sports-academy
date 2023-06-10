@@ -17,6 +17,7 @@ import InstructorsClasses from "../Pages/InstructorClasses/InstructorsClasses";
 import StudentPayments from "../Dashboard/Student/StudentPayments";
 import StudentHome from "../Dashboard/Student/StudentHome";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import PopularInstructors from "../PopularInstructors/PopularInstructors";
 
 
 
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
             path: '/instructor',
             element: <Instructor></Instructor>
         },
+        {
+            path: '/popularinstructors',
+            element: <PopularInstructors></PopularInstructors>
+        },
 
       ]
     },
@@ -73,7 +78,8 @@ const router = createBrowserRouter([
         },
         { 
          path: 'payment',
-         element:  <Payment></Payment>
+         element:  <Payment></Payment>,
+         
         },
         { 
          path: 'instructorclasses',

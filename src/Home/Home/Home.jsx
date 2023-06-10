@@ -3,6 +3,7 @@ import Slider from '../Slider/Slider';
 import Winners from '../Winners/Winners';
 import ThemeToggle from '../../ThemeToggle/ThemeToggle';
 import PopularClasses from '../PopularClasses/PopularClasses';
+import PopularInstructors from '../../PopularInstructors/PopularInstructors';
 
 const Home = () => {
     return (
@@ -10,6 +11,7 @@ const Home = () => {
             <ThemeToggle ></ThemeToggle>
             <Slider></Slider>
             <PopularClasses></PopularClasses>
+            <PopularInstructors></PopularInstructors>
             <Winners></Winners>
         </div>
     );

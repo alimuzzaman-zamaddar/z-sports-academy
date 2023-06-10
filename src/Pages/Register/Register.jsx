@@ -17,6 +17,16 @@ const Register = () => {
   } = useForm();
 
   const onSubmit = (data) => {
+    if (data.password !== data.confirmPassword) {
+      // Passwords do not match
+      Swal.fire({
+        icon: "error",
+        title: "Password Error",
+        text: "Passwords do not match.",
+      });
+      return;
+    }
+
     createUser(data.email, data.password).then((result) => {
       const loggedUser = result.user;
       console.log(loggedUser);
@@ -48,10 +58,11 @@ const Register = () => {
         .catch((error) => console.log(error));
     });
   };
+
   return (
     <>
       <div className="card py-24">
-        <h1 className="text-center text-6xl font-bold">please Register</h1>
+        <h1 className="text-center text-6xl font-bold">Please Register</h1>
         <form onSubmit={handleSubmit(onSubmit)} className="card-body">
           <div className="form-control">
             <label className="label">
@@ -90,7 +101,7 @@ const Register = () => {
               type="email"
               {...register("email", { required: true })}
               name="email"
-              placeholder="email"
+              placeholder="Email"
               className="input input-bordered"
             />
             {errors.email && (
@@ -109,7 +120,7 @@ const Register = () => {
                 maxLength: 20,
                 pattern: /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[a-z])/,
               })}
-              placeholder="password"
+              placeholder="Password"
               name="password"
               className="input input-bordered"
             />
@@ -118,35 +129,38 @@ const Register = () => {
             )}
             {errors.password?.type === "pattern" && (
               <p className="text-red-600">
-                Password must have one Uppercase one lower case, one number and
-                one special character.
+                Password must have one uppercase letter, one lowercase letter,
+                one number, and one special character.
               </p>
             )}
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="label-text">Password</span>
+              <span className="label-text">Confirm Password</span>
             </label>
             <input
-              type="ConformPassword"
-              {...register("password", {
+              type="password"
+              {...register("confirmPassword", {
                 required: true,
                 minLength: 6,
                 maxLength: 20,
                 pattern: /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[a-z])/,
               })}
-              placeholder=" Conform password"
-              name="password"
+              placeholder="Confirm Password"
+              name="confirmPassword"
               className="input input-bordered"
             />
-            {errors.password?.type === "required" && (
-              <p className="text-red-600">Password is required</p>
+            {errors.confirmPassword?.type === "required" && (
+              <p className="text-red-600">Confirm Password is required</p>
             )}
-            {errors.password?.type === "pattern" && (
+            {errors.confirmPassword?.type === "pattern" && (
               <p className="text-red-600">
-                Password must have one Uppercase one lower case, one number and
-                one special character  password dosen't match.
+                Confirm Password must have one uppercase letter, one lowercase
+                letter, one number, and one special character.
               </p>
+            )}
+            {errors.confirmPassword?.type === "validate" && (
+              <p className="text-red-600">Passwords do not match.</p>
             )}
           </div>
           <div className="form-control mt-6">
@@ -155,9 +169,9 @@ const Register = () => {
         </form>
         <SocialLogin></SocialLogin>
         <span className="text-center">
-          Already have an account
+          Already have an account?{" "}
           <strong>
-            <Link to="/login"> Please Login </Link>
+            <Link to="/login">Please Login</Link>
           </strong>
         </span>
       </div>
