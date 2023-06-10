@@ -3,11 +3,13 @@ import { useContext } from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { AuthContext } from '../Providers/AuthProviders';
+import useAllClasses from '../../Hooks/useAllClasses';
 
 const InstructorsClasses = () => {
     const {user} = useContext(AuthContext)
     console.log(user)
     const [postedClasses,SetPostedClasses] = useState([])
+    const [AllClasses] = useAllClasses()
     useEffect(() => {
         fetch(`http://localhost:5000/class?email=${user?.email}`)
         .then(res => res.json())
