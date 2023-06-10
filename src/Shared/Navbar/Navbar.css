@@ -1,0 +1,66 @@
+.header-navigation-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.header-navigation-bar h3{
+    font-size: 30px;
+    font-weight: 900;
+    font-family: fantasy;
+}
+.header-title{
+    display: flex;
+}
+.header-title img{
+    margin-right: 20px;
+}
+.navigation-lings a{
+    margin-right: 20px;
+}
+.navigation-login{
+    display: flex;
+}
+.navigation-login img{
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 576px) {
+   .header-navigation-bar{
+    display: flex;
+    flex-direction: column;
+   }
+   .navigation-lings {
+    display: flex;
+    flex-direction: column;
+   
+   }
+   .navigation-lings a{
+    margin: 20px 0;
+   }
+   .navigation-login{
+    display: flex;
+    flex-direction: column;
+   }
+   .navigation-login img{
+    margin-left: 12px;
+    margin-bottom: 25px;
+
+   }
+   .header-title h1{
+    font-size: 30px;
+    font-size: 24px;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+   .header-title{
+    display: flex;
+    flex-direction: column-reverse;
+   }
+   .header-title img{
+    margin-top: 25px;
+    margin-left: 83px;
+
+   }
+
+  }
