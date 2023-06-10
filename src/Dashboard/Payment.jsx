@@ -9,7 +9,7 @@ const Payment = () => {
     const [selectedClass] = useClasses();
     const total = selectedClass.reduce((sum, item) => sum + item.price, 0);
     const price = parseFloat(total.toFixed(2))
-    // console.log(price)
+    console.log(price)
     return (
         <div>
             <Elements stripe={stripePromise}>

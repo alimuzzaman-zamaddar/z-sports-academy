@@ -6,6 +6,7 @@ const useAllClasses = () => {
 
     const { refetch, data: AllClasses = [] } = useQuery({
         queryKey: ['class'],
+        enabled: !loading,
         queryFn: async () => {
             const res = await fetch('http://localhost:5000/class')
             return res.json();

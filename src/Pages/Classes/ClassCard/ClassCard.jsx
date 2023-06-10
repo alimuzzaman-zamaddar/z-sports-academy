@@ -3,9 +3,13 @@ import { AuthContext } from "../../Providers/AuthProviders";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 import './ClassCard.css'
+import useAdmin from "../../../Hooks/sequrity/useAdmin";
+import useInstructor from "../../../Hooks/sequrity/useInstructor";
 
 const ClassCard = ({ classItem }) => {
     const {user} = useContext(AuthContext)
+    const [isAdmin] = useAdmin()
+    const [isInstructor] = useInstructor()
     // console.log(user)
     const navigate = useNavigate()
   const { Name, photo, IName, price, sets,_id } =
@@ -57,12 +61,12 @@ const ClassCard = ({ classItem }) => {
       <img className="w-full p-7 h-[400px]" src={photo} alt="" />
       <div className="p-7 flex justify-between items-center">
         <div className="">
-            <button onClick={() => handleSelect(classItem)} className="btn btn-primary">Select</button>
+            <button disabled={isAdmin || isInstructor} className="btn btn-primary"  onClick={() => handleSelect(classItem)} >Select</button>
         </div>
         <div className=" font-bold text-xl ml-6">
           <p>Class Name : {Name}</p>
           <p>Instructor : {IName}</p>
-          <p>Sets : {sets}</p>
+          <p>Available sets : {sets}</p>
           <p>Price : ${price}</p>
         </div>
       </div>
