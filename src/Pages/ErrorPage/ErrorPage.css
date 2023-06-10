@@ -1,0 +1,23 @@
+.error-info{
+    text-align: center;
+   }
+   .error-info img {
+       text-align: center;
+       width: 30%;
+       margin: 0 auto;
+       margin-top: 50px;
+   
+   }
+   .error-info .error{
+       font-size: 150px;
+   }
+   
+   .error-btn a{
+       text-decoration: none;
+       color: white;
+   }
+   .error-btn{
+       padding: 10px;
+       font-size: 30px;
+       border-radius: 6px;
+   }
