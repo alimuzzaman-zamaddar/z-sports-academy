@@ -2,7 +2,7 @@ import { useQuery } from '@tanstack/react-query'
 import { useContext } from 'react';
 import { AuthContext } from '../Pages/Providers/AuthProviders';
 const useAllClasses = () => {
-    const { user } = useContext(AuthContext);
+    const { user,loading } = useContext(AuthContext);
 
     const { refetch, data: AllClasses = [] } = useQuery({
         queryKey: ['class'],
