@@ -29,6 +29,36 @@ const AllClasses = () => {
           }
         });
     };
+    const handleDeny = (sClass) => {
+      const updateDeny = {status:'Denied'}
+      fetch(`http://localhost:5000/class/${sClass._id}`, {
+        method:'PATCH',
+        headers:{
+            "content-type": "application/json"
+        },
+        body: JSON.stringify(updateDeny)
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+          if (data.modifiedCount) {
+            refetch()
+            Swal.fire({
+              position: "top-end",
+              icon: "success",
+              title: `${sClass.Name}is Denied Now!`,
+              showConfirmButton: false,
+              timer: 1500,
+            });
+          }
+        });
+    };
+
+    const handleFeedback = (sClass) =>{
+
+    }
+
+
 
 
 
@@ -72,7 +102,10 @@ const AllClasses = () => {
               <th>Class Name</th>
               <th>Instructor Name</th>
               <th>Course Fee</th>
+              <th>Sets</th>
               <th>Status</th>
+              <th>Denied</th>
+              <th>FeedBack</th>
               <th>Delete</th>
             </tr>
           </thead>
@@ -96,8 +129,11 @@ const AllClasses = () => {
                 </td>
                 <td>{sClass.Name}</td>
                 <td>{sClass.IName}</td>
+                <td>{sClass.price}</td>
                 <td>{sClass.sets}</td>
-                <td> <button  onClick={() => handleApproved(sClass)}>{sClass?.status}</button> </td>
+                <td> <button onClick={() => handleApproved(sClass)}>{sClass?.status}</button> </td>
+                <td> <button onClick={() => handleDeny(sClass)}> {sClass?.status == 'approved' || sClass.status == "pending" ? 'Deny' : "Denied"} </button> </td>
+                <td> <button onClick={() => handleFeedback(sClass)}>FeedBack</button> </td>
                 <td>
                   <button
                     onClick={() => handleDelete(sClass)}

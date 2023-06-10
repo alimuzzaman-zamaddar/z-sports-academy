@@ -8,14 +8,16 @@ import useAllClasses from '../../Hooks/useAllClasses';
 const InstructorsClasses = () => {
     const {user} = useContext(AuthContext)
     console.log(user)
-    const [postedClasses,SetPostedClasses] = useState([])
     const [AllClasses] = useAllClasses()
-    useEffect(() => {
-        fetch(`http://localhost:5000/class?email=${user?.email}`)
-        .then(res => res.json())
-        .then(data => SetPostedClasses(data))
+    // const [postedClasses,SetPostedClasses] = useState([])
+    // useEffect(() => {
+    //     fetch(`http://localhost:5000/class?email=${user?.email}`)
+    //     .then(res => res.json())
+    //     .then(data => SetPostedClasses(data))
 
-    },[])
+    // },[])
+
+    const instructorClass = AllClasses.filter(insClass => insClass.Iemail === user.email)
 
     // const handleUpdate = (id) = {
 
@@ -43,7 +45,7 @@ const InstructorsClasses = () => {
             </tr>
           </thead>
           <tbody>
-            {postedClasses.map((sClass, index) => (
+            {instructorClass.map((sClass, index) => (
               <tr key={sClass._id}>
                 <th>
                   <label>{index + 1}</label>

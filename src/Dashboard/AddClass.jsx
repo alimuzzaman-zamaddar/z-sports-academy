@@ -12,8 +12,8 @@ const AddClass = () => {
     const Name = form.toyName.value;
     const IName = form.IName.value;
     const Iemail = form.Iemail.value;
-    const sets = form.sets.value;
-    const price = form.price.value;
+    const sets = parseFloat(form.sets.value);
+    const price = parseFloat(form.price.value);
     const status = form.status.value;
 
     const AddedClass = {
@@ -24,8 +24,9 @@ const AddClass = () => {
       price,
       sets,
       status,
+      enrolled:0,
     };
-    console.log(AddedClass);
+    // console.log(AddedClass);
 
     fetch("http://localhost:5000/class", {
       method: "POST",
