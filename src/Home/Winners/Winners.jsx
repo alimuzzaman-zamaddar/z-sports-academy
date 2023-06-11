@@ -1,5 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
+import img1 from '../../assets/winners/winner1.jpg'
+import img2 from '../../assets/winners/winners2.jpg'
+import img3 from '../../assets/winners/winner3.jpg'
+import img4 from '../../assets/winners/winners.jpg'
+import img5 from '../../assets/winners/winner5.jpg'
+import img6 from '../../assets/winners/winner6.jpg'
 
 const Winners = () => {
   return (
@@ -22,7 +28,7 @@ const Winners = () => {
         >
           <img
             className="w-full h-[450px] rounded-xl"
-            src=""
+            src={img1}
             alt=""
           />
         </motion.div>
@@ -36,7 +42,7 @@ const Winners = () => {
         >
           <img
             className="w-full h-[450px] rounded-xl"
-            src=""
+            src={img2}
             alt=""
           />
         </motion.div>
@@ -50,7 +56,7 @@ const Winners = () => {
         >
           <img
             className="w-full h-[450px] rounded-xl"
-            src=""
+            src={img6}
             alt=""
           />
         </motion.div>
@@ -64,7 +70,7 @@ const Winners = () => {
         >
           <img
             className="w-full h-[450px] rounded-xl"
-            src=""
+            src={img3}
             alt=""
           />
         </motion.div>
@@ -78,7 +84,7 @@ const Winners = () => {
         >
           <img
             className="w-full h-[450px] rounded-xl"
-            src=""
+            src={img4}
             alt=""
           />
         </motion.div>
@@ -92,7 +98,7 @@ const Winners = () => {
         >
           <img
             className="w-full h-[450px] rounded-xl"
-            src=""
+            src={img5}
             alt=""
           />
         </motion.div>
