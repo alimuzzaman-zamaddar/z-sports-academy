@@ -7,7 +7,7 @@ const AllClasses = () => {
     const  [AllClasses, refetch] = useAllClasses()
     const handleApproved = (sClass) => {
       const updateApproved = {status:'approved'}
-      fetch(`http://localhost:5000/class/${sClass._id}`, {
+      fetch(`https://zamaddar-sports-club-server.vercel.app/class/${sClass._id}`, {
         method:'PATCH',
         headers:{
             "content-type": "application/json"
@@ -31,7 +31,7 @@ const AllClasses = () => {
     };
     const handleDeny = (sClass) => {
       const updateDeny = {status:'Denied'}
-      fetch(`http://localhost:5000/class/${sClass._id}`, {
+      fetch(`https://zamaddar-sports-club-server.vercel.app/class/${sClass._id}`, {
         method:'PATCH',
         headers:{
             "content-type": "application/json"
@@ -74,7 +74,7 @@ const AllClasses = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/class/${sClass._id}`, {
+        fetch(`https://zamaddar-sports-club-server.vercel.app/class/${sClass._id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
@@ -131,13 +131,13 @@ const AllClasses = () => {
                 <td>{sClass.IName}</td>
                 <td>{sClass.price}</td>
                 <td>{sClass.sets}</td>
-                <td> <button onClick={() => handleApproved(sClass)}>{sClass?.status}</button> </td>
-                <td> <button onClick={() => handleDeny(sClass)}> {sClass?.status == 'approved' || sClass.status == "pending" ? 'Deny' : "Denied"} </button> </td>
-                <td> <button onClick={() => handleFeedback(sClass)}>FeedBack</button> </td>
+                <td> <button disabled={sClass?.status !== "pending"} className="btn btn-success" onClick={() => handleApproved(sClass)}>{sClass?.status}</button> </td>
+                <td> <button disabled={sClass?.status !== "pending"} className="btn btn-secondary" onClick={() => handleDeny(sClass)}> {sClass?.status == 'approved' || sClass.status == "pending" ? 'Deny' : "Denied"} </button> </td>
+                <td> <button disabled={sClass?.status !== "pending"} className="btn btn-primary" onClick={() => handleFeedback(sClass)}>FeedBack</button> </td>
                 <td>
-                  <button
+                  <button 
                     onClick={() => handleDelete(sClass)}
-                    className="btn btn-ghost btn-xs"
+                    className="btn btn-warning"
                   >
                     Delete
                   </button>

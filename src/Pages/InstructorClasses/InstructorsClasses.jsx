@@ -11,7 +11,7 @@ const InstructorsClasses = () => {
     const [AllClasses] = useAllClasses()
     // const [postedClasses,SetPostedClasses] = useState([])
     // useEffect(() => {
-    //     fetch(`http://localhost:5000/class?email=${user?.email}`)
+    //     fetch(`https://zamaddar-sports-club-server.vercel.app/class?email=${user?.email}`)
     //     .then(res => res.json())
     //     .then(data => SetPostedClasses(data))
 

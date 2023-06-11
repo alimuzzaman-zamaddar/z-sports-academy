@@ -3,7 +3,7 @@ import { Link, Outlet } from "react-router-dom";
 import { AuthContext } from "../Pages/Providers/AuthProviders";
 import useAdmin from "../Hooks/sequrity/useAdmin";
 import useInstructor from "../Hooks/sequrity/useInstructor";
-import { FaBookReader, FaHome, FaUsers } from "react-icons/fa";
+import { FaAddressBook, FaAddressCard, FaBookReader, FaHome, FaPaypal, FaUsers, FaUtensils } from "react-icons/fa";
 
 const Dashboard = () => {
   const {user} = useContext(AuthContext)
@@ -37,32 +37,34 @@ const Dashboard = () => {
           }
           {
             isInstructor ? <>
+                <span className="mx-auto text-2xl font-bold" > <FaHome></FaHome></span> 
                 <h1 className="text-center text-2xl font-bold" >Instructor DashBoard</h1>
               <li>
-                <Link to="/"> instructor Home </Link>
+                <Link to="/"> <span> <FaHome></FaHome></span>  instructor Home </Link>
               </li>
               <li>
-                <Link to="/dashboard/addclass">Add a Class </Link>
+                <Link to="/dashboard/addclass"> <span><FaAddressCard></FaAddressCard></span>  Add a Class </Link>
               </li>
               <li>
-                <Link to="/dashboard/instructorclasses">My Classes </Link>
+                <Link to="/dashboard/instructorclasses"> <span></span>   My Classes </Link>
               </li>
             </> : ''
           }
           {
              isAdmin  ||  isInstructor ? ''  : <>  
-             <h1 className="text-center text-2xl font-bold" >Student DashBoard</h1>
+             <span className="mx-auto text-2xl font-bold" > <FaHome></FaHome></span> 
+             <h1 className="text-center text-2xl font-bold mb-5" >Student DashBoard</h1>
            <li>
-             <Link to="/dashboard/studenthome">Student Home </Link>
+             <Link to="/dashboard/studenthome"> <span> <FaHome></FaHome></span>Student Home </Link>
            </li>
             <li>
-             <Link to="/dashboard/myclass"> My Class </Link>
+             <Link to="/dashboard/myclass"> <span><FaAddressBook></FaAddressBook></span> My Class </Link>
            </li>
             <li>
-             <Link to="/dashboard/studentPayments"> My Payments </Link>
+             <Link to="/dashboard/studentPayments"> <span><FaPaypal></FaPaypal></span> My Payments </Link>
            </li>
             <li>
-             <Link to="/">Back To Home </Link>
+             <Link to="/"> <span> <FaHome></FaHome></span>  Back To Home </Link>
            </li>
           </>
           }

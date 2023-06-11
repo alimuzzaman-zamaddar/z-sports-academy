@@ -8,3 +8,9 @@
 4.student can select  class  payment ,see payment history etc.
 5.admin can make user admin instructor and delete a user.
 
+
+live site link:  https://zamaddar-sports-club.web.app/
+
+
+
+

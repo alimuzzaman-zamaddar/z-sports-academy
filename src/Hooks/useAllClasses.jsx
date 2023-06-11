@@ -7,7 +7,7 @@ const useAllClasses = () => {
     const { refetch, data: AllClasses = [] } = useQuery({
         queryKey: ['class'],
         queryFn: async () => {
-            const res = await fetch('http://localhost:5000/class')
+            const res = await fetch('https://zamaddar-sports-club-server.vercel.app/class')
             return res.json();
         },
     })

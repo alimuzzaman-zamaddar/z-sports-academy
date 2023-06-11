@@ -28,7 +28,7 @@ const AddClass = () => {
     };
     // console.log(AddedClass);
 
-    fetch("http://localhost:5000/class", {
+    fetch("https://zamaddar-sports-club-server.vercel.app/class", {
       method: "POST",
       headers: {
         "content-type": "application/json",

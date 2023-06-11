@@ -73,6 +73,7 @@ const CheckOutForm = ({ selectedClass, price }) => {
         date: new Date(),
         quantity: selectedClass.length,
         selectedItems: selectedClass.map((item) => item._id),
+        selectedId: selectedClass.map((item) => item.selectedClassId),
         status: "service pending",
         itemNames: selectedClass.map((item) => item.Name),
       };

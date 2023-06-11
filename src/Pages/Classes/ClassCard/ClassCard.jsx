@@ -19,7 +19,7 @@ const ClassCard = ({ classItem }) => {
     // console.log(classItem)
     if(user){
         const selectedClass = {selectedClassId: _id,Name,photo,IName,price,sets,email:user?.email}
-        fetch('http://localhost:5000/select',{
+        fetch('https://zamaddar-sports-club-server.vercel.app/select',{
             method: 'POST',
             headers: {
                 'content-type':'application/json'
