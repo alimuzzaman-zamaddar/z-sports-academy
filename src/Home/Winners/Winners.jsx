@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import img1 from '../../assets/winners/winner1.jpg'
-import img2 from '../../assets/winners/winners2.jpg'
-import img3 from '../../assets/winners/winner3.jpg'
-import img4 from '../../assets/winners/winners.jpg'
-import img5 from '../../assets/winners/winner5.jpg'
-import img6 from '../../assets/winners/winner6.jpg'
+import img2 from '../../assets/winners/winers2.jpg'
+import img3 from '../../assets/winners/winners.jpg'
+import img4 from '../../assets/winners/winners4.jpg'
+import img5 from '../../assets/winners/winners5.jpg'
+import img6 from '../../assets/winners/winners6.jpg'
 
 const Winners = () => {
   return (
