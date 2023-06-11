@@ -5,6 +5,7 @@ import PopularCCard from "./PopularCCard";
 
 const PopularClasses = () => {
   const [AllClasses] = useAllClasses();
+  console.log(AllClasses)
 
   const popularClasses = AllClasses.filter(
     (aclass) => aclass.status == "approved"
