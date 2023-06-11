@@ -9,22 +9,8 @@ const InstructorsClasses = () => {
     const {user} = useContext(AuthContext)
     console.log(user)
     const [AllClasses] = useAllClasses()
-    // const [postedClasses,SetPostedClasses] = useState([])
-    // useEffect(() => {
-    //     fetch(`https://zamaddar-sports-club-server.vercel.app/class?email=${user?.email}`)
-    //     .then(res => res.json())
-    //     .then(data => SetPostedClasses(data))
-
-    // },[])
 
     const instructorClass = AllClasses.filter(insClass => insClass.Iemail === user.email)
-
-    // const handleUpdate = (id) = {
-
-    // }
-
-
-
     return (
         <div>
         <h1 className="text-center text-6xl font-extrabold py-10">My Classes</h1>
@@ -68,8 +54,8 @@ const InstructorsClasses = () => {
                 <td>{sClass.status} </td>
                 <td>
                   <button
-                    
-                    className="btn btn-ghost btn-xs"
+                  onClick={`update/${sClass.id}`}
+                    className="btn btn-secondary"
                   >
                     Update
                   </button>

@@ -19,6 +19,7 @@ import StudentHome from "../Dashboard/Student/StudentHome";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import PopularInstructors from "../PopularInstructors/PopularInstructors";
 import EnrolledClasses from "../Dashboard/Student/EnrolledClasses";
+import Update from "../Pages/InstructorClasses/Update";
 
 
 
@@ -97,6 +98,10 @@ const router = createBrowserRouter([
         { 
          path: 'studenthome',
          element:  <StudentHome></StudentHome>
+        },
+        { 
+         path: 'update',
+         element:  <Update></Update>
         },
       ]
     }

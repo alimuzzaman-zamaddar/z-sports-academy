@@ -13,7 +13,7 @@ const SocialLogin = () => {
         .then(result => {
             const loggedInUser = result.user
             console.log(loggedInUser);
-            const savedUser = { name: loggedInUser.displayName, email: loggedInUser.email }
+            const savedUser = { name: loggedInUser?.displayName, email: loggedInUser?.email }
             fetch('https://zamaddar-sports-club-server.vercel.app/users', {
                 method: 'POST',
                 headers: {

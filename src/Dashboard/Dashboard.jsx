@@ -9,6 +9,7 @@ const Dashboard = () => {
   const {user} = useContext(AuthContext)
   const [isAdmin] = useAdmin();
   const [isInstructor] = useInstructor()
+
   return (
     <div className="drawer lg:drawer-open">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
@@ -46,7 +47,7 @@ const Dashboard = () => {
                 <Link to="/dashboard/addclass"> <span><FaAddressCard></FaAddressCard></span>  Add a Class </Link>
               </li>
               <li>
-                <Link to="/dashboard/instructorclasses"> <span></span>   My Classes </Link>
+                <Link to="/dashboard/instructorclasses">  <span><FaAddressBook></FaAddressBook></span>   My Classes </Link>
               </li>
             </> : ''
           }
