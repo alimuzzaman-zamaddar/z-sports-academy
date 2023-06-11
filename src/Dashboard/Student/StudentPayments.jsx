@@ -10,16 +10,16 @@ const StudentPayments = () => {
     .then((data) => setMyPayments(data));
 
   const payments = myPayments.filter((pay) => pay.email == user?.email);
-  console.log(payments);
 
   return (
-    <div className="py-28 grid grid-cols-4 gap-9">
-
-        {
-            payments.map(history =>  <HistoryCard history={history} key={history._id}></HistoryCard>)
-        }
-
-    </div>
+    <>
+    <h1 className="text-center text-6xl font-extrabold py-5">Your Payments</h1>
+      <div className="pb-28 pt-6 grid grid-cols-3 gap-9 mx-auto">
+        {payments.map((history) => (
+          <HistoryCard history={history} key={history._id}></HistoryCard>
+        ))}
+      </div>
+    </>
   );
 };
 
