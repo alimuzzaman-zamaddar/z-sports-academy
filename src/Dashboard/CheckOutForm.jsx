@@ -113,7 +113,7 @@ const CheckOutForm = ({ selectedClass, price }) => {
         </button>
       </form>
       {PayCardError && (
-        <p className="text-warning text-center form-control">{PayCardError}</p>
+        <p className="text-warning text-center">{PayCardError}</p>
       )}
       {transactionId && (
         <p className="text-green-500 ml-12">
