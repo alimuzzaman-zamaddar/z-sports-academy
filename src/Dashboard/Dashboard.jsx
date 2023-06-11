@@ -49,6 +49,9 @@ const Dashboard = () => {
               <li>
                 <Link to="/dashboard/instructorclasses">  <span><FaAddressBook></FaAddressBook></span>   My Classes </Link>
               </li>
+              <li>
+                <Link to="/dashboard/update">  <span><FaAddressBook></FaAddressBook></span>   My Classes </Link>
+              </li>
             </> : ''
           }
           {
