@@ -26,6 +26,7 @@ const InstructorsClasses = () => {
               <th>Class Name</th>
               <th>Instructor Name</th>
               <th>Course Fee</th>
+              <th>Total Enroll</th>
               <th>Status</th>
               <th>Update</th>
             </tr>
@@ -51,10 +52,10 @@ const InstructorsClasses = () => {
                 <td>{sClass.Name}</td>
                 <td>{sClass.IName}</td>
                 <td>${sClass.price}</td>
+                <td>${sClass.enrolled}</td>
                 <td>{sClass.status} </td>
                 <td>
                   <button
-                  onClick={`update/${sClass.id}`}
                     className="btn btn-secondary"
                   >
                     Update

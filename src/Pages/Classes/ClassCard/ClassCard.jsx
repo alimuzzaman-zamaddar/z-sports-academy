@@ -12,7 +12,7 @@ const ClassCard = ({ classItem }) => {
     const [isInstructor] = useInstructor()
     // console.log(user)
     const navigate = useNavigate()
-  const { Name, photo, IName, price, sets,_id } =
+  const { Name, photo, IName, price, sets,_id,enrolled } =
     classItem;
 //   console.log(classItem);
   const handleSelect = (classItem) =>{
