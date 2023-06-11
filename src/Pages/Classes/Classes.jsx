@@ -8,12 +8,13 @@ const Classes = () => {
         .then(res => res.json())
         .then(data => setUserClasses(data))
     },[])
+    const approvedClasses = userClasses.filter(approve => approve.status == "approved")
     return (
      <div className='shadow-2xl'>
      <h1 className='text-center text-6xl font-extrabold pt-10'>Choose Your Interest</h1>
              <div className='grid grid-cols-1 md:grid-cols-3 gap-9 pt-10 pb-24'>
                 {
-                    userClasses.map(classItem => <ClassCard
+                    approvedClasses.map(classItem => <ClassCard
                     key={classItem._id}
                     classItem={classItem}
                     ></ClassCard>)

@@ -3,40 +3,35 @@ import { Link, Outlet } from "react-router-dom";
 import { AuthContext } from "../Pages/Providers/AuthProviders";
 import useAdmin from "../Hooks/sequrity/useAdmin";
 import useInstructor from "../Hooks/sequrity/useInstructor";
+import { FaBookReader, FaHome, FaUsers } from "react-icons/fa";
 
 const Dashboard = () => {
   const {user} = useContext(AuthContext)
   const [isAdmin] = useAdmin();
   const [isInstructor] = useInstructor()
-  // const isAdmin = true
-  // const isInstructor = false;
   return (
     <div className="drawer lg:drawer-open">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content">
-        {/* Page content here */}
         <Outlet></Outlet>
-        <label
-          htmlFor="my-drawer-2"
-          className="btn btn-primary drawer-button lg:hidden"
-        >
-          Open drawer
-        </label>
       </div>
       <div className="drawer-side">
         <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
         <ul className="menu p-4 w-80 h-full bg-base-200 text-base-content">
           {
             isAdmin ? <>  
-                <h1 className="text-center text-2xl font-bold" >Admin DashBoard</h1>
+            <li>
+              <span className="mx-auto text-2xl font-bold" > <FaHome></FaHome></span> 
+              <h1 className="mx-auto text-2xl font-bold" >Admin DashBoard</h1>
+            </li>
               <li>
-                <Link to="/dashboard/allusers">Manage Users</Link>
+                <Link to="/dashboard/allusers"><span> <FaUsers></FaUsers> </span>  Manage Users</Link>
               </li> 
               <li>
-                <Link to="/dashboard/allclasses">Manage Classes </Link>
+                <Link to="/dashboard/allclasses"> <span><FaBookReader></FaBookReader></span>  Manage Classes </Link>
               </li>  
                  <li>
-                <Link to="/"> Admin Home </Link>
+                <Link to="/"><span> <FaHome></FaHome></span>  Admin Home </Link>
               </li>
             </> : ''
           }
@@ -71,9 +66,6 @@ const Dashboard = () => {
            </li>
           </>
           }
-
-
-
 
         </ul>
       </div>
