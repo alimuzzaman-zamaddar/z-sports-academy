@@ -86,7 +86,7 @@ const router = createBrowserRouter([
          element:  <InstructorsClasses></InstructorsClasses>
         },
         { 
-         path: 'studentpsyments',
+         path: 'studentpayments',
          element:  <StudentPayments></StudentPayments>
         },
         { 
