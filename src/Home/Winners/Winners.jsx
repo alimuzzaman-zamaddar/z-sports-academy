@@ -22,7 +22,7 @@ const Winners = () => {
         >
           <img
             className="w-full h-[450px] rounded-xl"
-            src="https://img.olympicchannel.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/axol3c2xv0pgd2dndoix"
+            src=""
             alt=""
           />
         </motion.div>
@@ -36,7 +36,7 @@ const Winners = () => {
         >
           <img
             className="w-full h-[450px] rounded-xl"
-            src="https://thumbs.dreamstime.com/z/bradley-wiggins-olympic-time-trial-26055594.jpg"
+            src=""
             alt=""
           />
         </motion.div>
@@ -50,7 +50,7 @@ const Winners = () => {
         >
           <img
             className="w-full h-[450px] rounded-xl"
-            src="https://thumbs.dreamstime.com/z/reese-hoffa-decanation-international-outdoor-games-september-paris-france-american-shot-putter-world-champion-won-bronze-59619722.jpg"
+            src=""
             alt=""
           />
         </motion.div>
@@ -64,7 +64,7 @@ const Winners = () => {
         >
           <img
             className="w-full h-[450px] rounded-xl"
-            src="https://thumbs.dreamstime.com/z/all-around-gymnastics-winners-rio-olympic-games-aliya-mustafina-l-simone-biles-aly-raisman-medal-ceremony-de-janeiro-75937483.jpg"
+            src=""
             alt=""
           />
         </motion.div>
@@ -78,7 +78,7 @@ const Winners = () => {
         >
           <img
             className="w-full h-[450px] rounded-xl"
-            src="https://i.dailymail.co.uk/i/pix/2012/08/12/article-0-148019B2000005DC-126_964x510.jpg"
+            src=""
             alt=""
           />
         </motion.div>
@@ -92,7 +92,7 @@ const Winners = () => {
         >
           <img
             className="w-full h-[450px] rounded-xl"
-            src="https://assets.entrepreneur.com/content/3x2/2000/20160809165428-GettyImages-587152278.jpeg"
+            src=""
             alt=""
           />
         </motion.div>
