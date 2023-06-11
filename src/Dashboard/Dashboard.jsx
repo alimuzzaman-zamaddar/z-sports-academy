@@ -61,7 +61,7 @@ const Dashboard = () => {
              <Link to="/dashboard/myclass"> <span><FaAddressBook></FaAddressBook></span> My Class </Link>
            </li>
             <li>
-             <Link to="/dashboard/studentpayments"> <span><FaPaypal></FaPaypal></span> My Payments </Link>
+             <Link to="/dashboard/studentpayments"> <span><FaPaypal></FaPaypal></span> My Payments History </Link>
            </li>
             <li>
              <Link to="/"> <span> <FaHome></FaHome></span>  Back To Home </Link>
