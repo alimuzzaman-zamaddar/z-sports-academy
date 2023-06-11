@@ -58,7 +58,10 @@ const Dashboard = () => {
              <Link to="/dashboard/studenthome"> <span> <FaHome></FaHome></span>Student Home </Link>
            </li>
             <li>
-             <Link to="/dashboard/myclass"> <span><FaAddressBook></FaAddressBook></span> My Class </Link>
+             <Link to="/dashboard/myclass"> <span><FaAddressBook></FaAddressBook></span> My selected Classes </Link>
+           </li>
+            <li>
+             <Link to="/dashboard/enrolledclasses"> <span><FaAddressBook></FaAddressBook></span> My Enrolled classes</Link>
            </li>
             <li>
              <Link to="/dashboard/studentpayments"> <span><FaPaypal></FaPaypal></span> My Payments History </Link>
