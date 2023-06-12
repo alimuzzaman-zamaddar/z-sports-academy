@@ -115,7 +115,7 @@ const AllUsers = () => {
                   ) : (
                     <button
                       onClick={() => handleMakeAdmin(user)}
-                      className="btn btn-ghost btn-xs"
+                      className="btn btn-secondary"
                     >
                       makeAdmin
                     </button>
