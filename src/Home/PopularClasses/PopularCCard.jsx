@@ -8,7 +8,7 @@ const PopularCCard = ({pClass}) => {
           <div className=" font-bold text-xl text-center">
             <p>Class Name : {pClass.Name}</p>
             <p>Instructor : {pClass.IName}</p>
-            <p>Sets : {pClass.sets}</p>
+            <p>Enrolled Students : {pClass.enrolled}</p>
             <p>Price : ${pClass.price}</p>
           </div>
         </div>
