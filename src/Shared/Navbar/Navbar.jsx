@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="header-navigation-bar">
+    <div className="header-navigation-bar text-white">
       <div className="header-title">
         <img
           className="w-12 h-12 rounded-full "

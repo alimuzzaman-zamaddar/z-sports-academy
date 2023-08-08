@@ -17,6 +17,7 @@
 }
 .navigation-lings a{
     margin-right: 20px;
+    font-size: 20px;
 }
 .navigation-login{
     display: flex;

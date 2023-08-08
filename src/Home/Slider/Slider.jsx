@@ -1,17 +1,12 @@
 import React from "react";
 import './Slider.css'
 import { motion } from "framer-motion"
+import { Carousel } from 'flowbite-react';
 const Slider = () => {
 
     
   return (
-    <motion.div initial={{ scale: 1.5 }}
-    animate={{ rotate: 360, scale: 1 }}
-    transition={{
-      type: "spring",
-      stiffness: 260,
-      damping: 60
-    }} className="slider py-11" >
+    <div className="slider py-11" >
       <div className="carousel w-full">
         <div id="item1" className="carousel-item w-full">
           <img
@@ -58,7 +53,10 @@ const Slider = () => {
         <h1>WE ARE HERE WITH WORLD BET SPORTS TRAINERS !!!</h1>
         <p>Here you can make your boy fit and fine and you can train yourself as a world class athlatic.so dont west your time and enroll here!!</p>
       </div>
-    </motion.div>
+    </div>
+     
+    
+
   );
 };
 

@@ -1,0 +1,106 @@
+/*why choose us*/
+.feature-item{
+    background: rgb(109 40 217);
+    padding: 30px;
+    margin-bottom: 30px;
+    color: white;
+    overflow: hidden;
+    transition: .5s;
+
+    position: relative;
+}
+.feature-item::before{
+    content: "";
+    position: absolute;
+    top: -133px;
+    left: 15px;
+    right: 0;
+    margin: 0;
+    height: 70%;
+    width: 90%;
+    background: rgb(46 16 101);
+    border-radius: 50%;
+
+
+}
+.feature-item .fi-icon{
+    position: relative;
+    z-index: 1;
+}
+.feature-item:hover{
+    transform: translateY(-18px);
+}
+.feature-item:hover .fi-icon{
+    color: #4829f7;
+    background: #26c9e2;
+    box-shadow: 4px 4px 8px 8px whitesmoke;
+    transition: 1s;
+
+}
+.feature-item .fi-icon {
+    color: white;
+    font-size: 37px;
+    width: 90px;
+    background: #26c9e2;
+    display: inline-block;
+    height: 90px;
+    line-height: 90px;
+    border-radius: 50%;
+  
+}
+.feature-item .fi-icon .feature-icon .r-icon{
+    margin-left: 26px;
+    margin-top: 26px;
+}
+.play-icon{
+    margin-left: 18px;
+    margin-top: 15px;
+}
+
+
+/*animation btn*/
+.animation-btn {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    font-size: 56px;
+    color: #26c9e2;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 282px;
+    bottom: 77px;
+  }
+
+.about-details{
+    position: relative;
+}
+.animation-btn::before{
+    content: "";
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background: #26c9e2;
+
+    animation: animationbtn 1.4s ease-out infinite;
+
+}
+@keyframes animationbtn{
+0%,30%{
+    transform: scale(0);
+    opacity: 1;
+}
+50%{
+    transform: scale(2);
+    opacity: .7;
+}
+100%{
+    transform: scale(3);
+    opacity: 0;
+}
+}
