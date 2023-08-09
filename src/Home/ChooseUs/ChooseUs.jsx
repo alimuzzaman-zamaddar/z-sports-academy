@@ -16,7 +16,7 @@ const ChooseUs = () => {
         </p>
       </div>
       <div
-        className="grid grid-cols-2 border-[2px] p-11"
+        className="grid md:grid-cols-2 border-[2px] p-11"
         data-aos="fade-up"
         data-aos-anchor-placement="top-center"
       >
@@ -28,7 +28,7 @@ const ChooseUs = () => {
             </a>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           <div
             className="feature-item mt-4 text-center text-white border-2"
             data-aos="fade-up"
@@ -36,8 +36,7 @@ const ChooseUs = () => {
           >
             <div className="fi-icon">
               <i className="feature-icon">
-                {" "}
-                <FaPlayCircle className="r-icon"></FaPlayCircle>{" "}
+                <FaPlayCircle className="r-icon"></FaPlayCircle>
               </i>
             </div>
             <h3 className="py-4">Guarantee</h3>
@@ -53,8 +52,7 @@ const ChooseUs = () => {
           >
             <div className="fi-icon">
               <i className="feature-icon">
-                {" "}
-                <FaPlayCircle className="r-icon"></FaPlayCircle>{" "}
+                <FaPlayCircle className="r-icon"></FaPlayCircle>
               </i>
             </div>
             <h3 className="py-4">Guarantee</h3>
@@ -70,8 +68,7 @@ const ChooseUs = () => {
           >
             <div className="fi-icon">
               <i className="feature-icon">
-                {" "}
-                <FaPlayCircle className="r-icon"></FaPlayCircle>{" "}
+                <FaPlayCircle className="r-icon"></FaPlayCircle>
               </i>
             </div>
             <h3 className="py-4">Guarantee</h3>
@@ -87,8 +84,7 @@ const ChooseUs = () => {
           >
             <div className="fi-icon">
               <i className="feature-icon">
-                {" "}
-                <FaPlayCircle className="r-icon"></FaPlayCircle>{" "}
+                <FaPlayCircle className="r-icon"></FaPlayCircle>
               </i>
             </div>
             <h3 className="py-4">Guarantee</h3>

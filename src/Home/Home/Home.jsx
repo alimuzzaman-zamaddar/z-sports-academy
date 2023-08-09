@@ -6,16 +6,20 @@ import Winners from '../Winners/Winners';
 import ChooseUs from '../ChooseUs/ChooseUs';
 import Values from '../Values/Values';
 import ContactUs from '../ContactUs/ContactUs';
+import Coach from '../Coach/Coach';
+import News from '../Nwes/News';
 
 const Home = () => {
     return (
         <div>
             <Slider></Slider>
             <PopularClasses></PopularClasses>
-            <PopularInstructors></PopularInstructors>
-            <Winners></Winners>
-            <ChooseUs></ChooseUs>
             <Values></Values>
+            <PopularInstructors></PopularInstructors>
+            <ChooseUs></ChooseUs>
+            <Winners></Winners>
+            <News></News>
+            <Coach></Coach>
             <ContactUs></ContactUs>
         </div>
     );

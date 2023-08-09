@@ -41,6 +41,18 @@ const Navbar = () => {
         >
           Classes
         </NavLink>
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? "font-bold" : "")}
+        >
+          Blogs
+        </NavLink>
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? "font-bold" : "")}
+        >
+          Contact
+        </NavLink>
         {user ? (
           <NavLink
             to="/dashboard"

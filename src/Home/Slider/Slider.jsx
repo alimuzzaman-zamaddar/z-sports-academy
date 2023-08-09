@@ -10,14 +10,15 @@ const Slider = () => {
       <div className="carousel w-full">
         <div id="item1" className="carousel-item w-full">
           <img
-            src="https://www.liveabout.com/thmb/-SVQZtry1U3bFRX8Y1UH7ENy3K4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/RioOlympicsswimmingpool-GettyImages-519838356-59c09963054ad90011cf5247.jpg"
+            src="https://img.freepik.com/free-vector/realistic-american-football-stadium_52683-53798.jpg?w=2000"
             className="w-full h-3/4"
           />
         </div>
         <div id="item2" className="carousel-item w-full">
           <img
-            src="https://img.freepik.com/free-vector/realistic-american-football-stadium_52683-53798.jpg?w=2000"
+            src="https://www.liveabout.com/thmb/-SVQZtry1U3bFRX8Y1UH7ENy3K4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/RioOlympicsswimmingpool-GettyImages-519838356-59c09963054ad90011cf5247.jpg"
             className="w-full"
+            
           />
         </div>
         <div id="item3" className="carousel-item w-full">
