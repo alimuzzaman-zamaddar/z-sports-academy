@@ -31,7 +31,7 @@ const News = () => {
               Ireland produce incredible fightback against England to win 19th
               Home Internationals
             </h1>
-            <span className="text-green-500 font-semibold 6">
+            <span className="text-white font-semibold 6">
               October 2, 2021 No Comments
             </span>
             <p className="text-white mt-6">
@@ -51,7 +51,7 @@ const News = () => {
             <h1 className="text-xl text-white mb-5">
               Westmanstown to face Nenagh for Fred Perry Trophy title
             </h1>
-            <span className="text-green-500 font-semibold 6">
+            <span className="text-white font-semibold 6">
               October 2, 2021 No Comments
             </span>
             <p className="text-white mt-6">
@@ -71,7 +71,7 @@ const News = () => {
             <h1 className="text-xl text-white mb-5">
               Lowry and Murphy conquer high winds to contend for Dunhill Links
             </h1>
-            <span className="text-green-500 font-semibold 6">
+            <span className="text-white font-semibold 6">
               October 2, 2021 No Comments
             </span>
             <p className="text-white mt-6">
@@ -91,7 +91,7 @@ const News = () => {
             <h1 className="text-xl text-white mb-5">
               McBride, Purcell and McGee progress at Korn Ferry Tour Q-School
             </h1>
-            <span className="text-green-500 font-semibold 6">
+            <span className="text-white font-semibold 6">
               October 2, 2021 No Comments
             </span>
             <p className="text-white mt-6">
