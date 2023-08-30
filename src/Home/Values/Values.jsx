@@ -24,8 +24,7 @@ const Values = () => {
             <div className="mb-5">
               <h1 className=" text-4xl mb-4"> Innovative</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloremque, illum!
+              Web development can assist businesses in broadening their reach and connecting 
               </p>
             </div>
           </div>
@@ -41,8 +40,7 @@ const Values = () => {
             <div className="mb-5">
               <h1 className=" text-4xl mb-4"> Talent</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloremque, illum!
+              SEO-optimized website can attract visitors from all over the world and drive more traffic to the business
               </p>
             </div>
           </div>
@@ -58,8 +56,7 @@ const Values = () => {
             <div className="mb-5">
               <h1 className="text-4xl mb-4"> Enabling</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloremque, illum!
+              value you can prove to your buyers! If you have a web design business, an SEO company or some other ..
               </p>
             </div>
           </div>
@@ -75,8 +72,7 @@ const Values = () => {
             <div className="mb-5">
               <h1 className=" text-4xl mb-4"> Commercially responsible</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloremque, illum!
+              The answer depends entirely upon what type of work you are doing. There are two different types of 
               </p>
             </div>
           </div>

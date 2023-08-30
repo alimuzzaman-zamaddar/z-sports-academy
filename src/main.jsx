@@ -10,7 +10,7 @@ const queryClient = new QueryClient();
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <div className="bg-gradient-to-r from-purple-950 via-purple-700 to-purple-950">
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-[1390px] mx-auto">
       <QueryClientProvider client={queryClient}>
         <AuthProviders>
           <React.StrictMode>

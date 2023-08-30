@@ -41,8 +41,7 @@ const ChooseUs = () => {
             </div>
             <h3 className="py-4">Guarantee</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt
+            The answer depends entirely upon what type of work you are doing. There are two different types of good.
             </p>
           </div>
           <div
@@ -55,10 +54,9 @@ const ChooseUs = () => {
                 <FaPlayCircle className="r-icon"></FaPlayCircle>
               </i>
             </div>
-            <h3 className="py-4">Guarantee</h3>
+            <h3 className="py-4">Behavior</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt
+           You are doing. There are two different types of The answer depends entirely upon what type of work.
             </p>
           </div>
           <div
@@ -71,10 +69,9 @@ const ChooseUs = () => {
                 <FaPlayCircle className="r-icon"></FaPlayCircle>
               </i>
             </div>
-            <h3 className="py-4">Guarantee</h3>
+            <h3 className="py-4">Dedication</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt
+             There are two different types of The answer depends entirely upon what type of work You are doing..
             </p>
           </div>
           <div
@@ -87,10 +84,9 @@ const ChooseUs = () => {
                 <FaPlayCircle className="r-icon"></FaPlayCircle>
               </i>
             </div>
-            <h3 className="py-4">Guarantee</h3>
+            <h3 className="py-4">Exprience</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt
+            Different types of The answer depends entirely upon what type of work You are working
             </p>
           </div>
         </div>

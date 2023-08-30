@@ -8,9 +8,8 @@ const Slider = () => {
     <>
       <div className="slider mb-14">
         <Carousel
-          leftControl="left"
-          rightControl="right"
-          className="h-[calc(100dvh-30dvh)] lg:h-[calc(100dvh-25dvh)]"
+
+          className="h-[calc(100dvh-30dvh)] lg:h-[calc(100dvh-10dvh)]"
         >
           <img
             alt="..."

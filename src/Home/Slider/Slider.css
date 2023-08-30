@@ -1,20 +1,19 @@
 .slider img{
-  height: 550px;
+  height: 700px;
 }
 .slider{
 position: relative;
 }
 .information{
   position: absolute;
-  top: 17%;
-  width: 70%;
-  left: 15%;
+  top: 53%;
+  width: 30%;
+  left: 70%;
   background-color: rgba(29, 28, 27, 0.2);
 
 }
 .information h1{
-  font-size: 70px;
-  margin-bottom: 16px;
+  font-size: 30px;
   font-weight: 800;
   color: #ffffff;
   padding: 10px;
@@ -34,16 +33,18 @@ position: relative;
 
 @media only screen and (max-width: 576px){
   .information{
-    top: 20%;
-    left: 15%;
+    top: 70%;
+    left: 5%;
+    width: 90%;
+
 
   }
   .information h1{
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
   }
   .information p{
-    text-align: center;
+    display: none;
   }
 
 }
