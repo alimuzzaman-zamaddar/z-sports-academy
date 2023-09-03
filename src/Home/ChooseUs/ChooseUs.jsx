@@ -7,16 +7,16 @@ const ChooseUs = () => {
   return (
     <>
       <div className="text-center py-12">
-        <h1 className="text-white text-6xl font-serif mb-8">
+        <h1 className="text-[#05386B] text-6xl font-serif mb-8">
           Why people choose us
         </h1>
-        <p className=" text-lg text-white">
+        <p className=" text-lg text-[#05386B]">
           People choose us to do some great thighs together to make the place
           liveable.
         </p>
       </div>
       <div
-        className="grid md:grid-cols-2 border-[2px] p-11"
+        className="grid md:grid-cols-2 border-[2px] border-[#05386B] p-11"
         data-aos="fade-up"
         data-aos-anchor-placement="top-center"
       >
@@ -60,7 +60,7 @@ const ChooseUs = () => {
             </p>
           </div>
           <div
-            className="feature-item mt-4 text-center border-2"
+            className="feature-item mt-4 text-center border-2 "
             data-aos="fade-up"
             data-aos-anchor-placement="top-center"
           >

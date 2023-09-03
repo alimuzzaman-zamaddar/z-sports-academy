@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="header-navigation-bar text-white">
+    <div className="header-navigation-bar text-[#05386B]">
       <div className="header-title">
         <img
           className="w-12 h-12 rounded-full "
@@ -82,7 +82,7 @@ const Navbar = () => {
           </div>
         ) : (
           <div>
-            <button className="btn btn-primary">
+            <button className="btn bg-[#05386B] hover:bg-slate-400 text-white duration-700 login-button">
               <Link className="" to="/login">
                 Login
               </Link>

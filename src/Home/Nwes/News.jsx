@@ -7,14 +7,14 @@ import news4 from "../../assets/news/two-young-golfers-with-clubs-playing-golf-t
 const News = () => {
   return (
     <>
-      <div className=" flex justify-between items-center mb-7 border-t-2 pt-6">
+      <div className=" flex justify-between items-center mb-7 border-t-2 border-[#05386B] pt-6">
         <div className="">
-          <h1 className="text-5xl text-white font-serif font-extrabold">
+          <h1 className="text-5xl text-[#05386B] font-serif font-extrabold">
             Latest news & update
           </h1>
         </div>
         <div className="">
-          <button className="btn  bg-purple-500 hover:bg-purple-900 text-white">
+          <button className="btn  bg-[#05386B] hover:bg-[#3072b4] text-white">
             Read More
           </button>
         </div>
@@ -27,14 +27,14 @@ const News = () => {
         >
           <img className="rounded-[5px] w-full mb-5" src={news1} alt="" />
           <div className="">
-            <h1 className="text-xl text-white mb-5">
+            <h1 className="text-xl text-[#05386B] mb-5">
               Ireland produce incredible fightback against England to win 19th
               Home Internationals
             </h1>
-            <span className="text-white font-semibold 6">
+            <span className="text-[#05386B] font-semibold 6">
               October 2, 2021 No Comments
             </span>
-            <p className="text-white mt-6">
+            <p className="text-[#05386B] mt-6">
               Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur.magnis dis
               parturient montes
@@ -48,13 +48,13 @@ const News = () => {
         >
           <img className="rounded-[5px] w-full mb-5" src={news2} alt="" />
           <div className="">
-            <h1 className="text-xl text-white mb-5">
+            <h1 className="text-xl text-[#05386B] mb-5">
               Westmanstown to face Nenagh for Fred Perry Trophy title
             </h1>
-            <span className="text-white font-semibold 6">
+            <span className="text-[#05386B] font-semibold 6">
               October 2, 2021 No Comments
             </span>
-            <p className="text-white mt-6">
+            <p className="text-[#05386B] mt-6">
               Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur.magnis dis
               parturient montes
@@ -68,13 +68,13 @@ const News = () => {
         >
           <img className="rounded-[5px] w-full mb-5" src={news3} alt="" />
           <div className="">
-            <h1 className="text-xl text-white mb-5">
+            <h1 className="text-xl text-[#05386B] mb-5">
               Lowry and Murphy conquer high winds to contend for Dunhill Links
             </h1>
-            <span className="text-white font-semibold 6">
+            <span className="text-[#05386B] font-semibold 6">
               October 2, 2021 No Comments
             </span>
-            <p className="text-white mt-6">
+            <p className="text-[#05386B] mt-6">
               Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur.magnis dis
               parturient montes
@@ -88,13 +88,13 @@ const News = () => {
         >
           <img className="rounded-[5px] w-full mb-5" src={news4} alt="" />
           <div className="">
-            <h1 className="text-xl text-white mb-5">
+            <h1 className="text-xl text-[#05386B] mb-5">
               McBride, Purcell and McGee progress at Korn Ferry Tour Q-School
             </h1>
-            <span className="text-white font-semibold 6">
+            <span className="text-[#05386B] font-semibold 6">
               October 2, 2021 No Comments
             </span>
-            <p className="text-white mt-6">
+            <p className="text-[#05386B] mt-6">
               Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur.magnis dis
               parturient montes

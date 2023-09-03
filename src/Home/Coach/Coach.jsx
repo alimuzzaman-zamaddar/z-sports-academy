@@ -14,11 +14,11 @@ import coach10 from "../../assets/cotch/handsome-bearded-man-portrait-outdoors-e
 const Coach = () => {
   return (
     <div className="py-10">
-     <div className="text-center py-8 text-white border-b-2 mb-5">
+     <div className="text-center py-8 text-[#05386B] border-b-2 border-[#05386B] mb-5">
         <h1 className="text-center font-serif font-extrabold text-5xl mb-5">TRAINED BY A RELIABLE COACH</h1>
         <p className="text-2xl">OUR COACHING STAFF</p>
      </div>
-    <div className="grid grid-cols-2 md:grid-cols-5 gap-5 text-white">
+    <div className="grid grid-cols-2 md:grid-cols-5 gap-5 text-[#05386B]">
       <div
         className=""
         data-aos="fade-right"

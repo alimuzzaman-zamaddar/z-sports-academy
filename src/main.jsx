@@ -9,8 +9,8 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 const queryClient = new QueryClient();
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <div className="bg-gradient-to-r from-purple-950 via-purple-700 to-purple-950">
-    <div className="max-w-[1390px] mx-auto">
+  <div className="bg-slate-100">
+    <div className="max-w-[1390px] sm:px-2 md:px-0 mx-auto overflow-x-hidden">
       <QueryClientProvider client={queryClient}>
         <AuthProviders>
           <React.StrictMode>

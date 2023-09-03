@@ -14,16 +14,16 @@ import img6 from "../../assets/winners/winners6.jpg";
 const Winners = () => {
   return (
     <>
-      <h1 className="text-center text-7xl font-extrabold font-serif mt-10 text-white">
+      <h1 className="text-center text-7xl font-extrabold font-serif mt-10 text-[#05386B]">
         Winners Section
       </h1>
-      <p className="md:w-1/2 text-center md:mx-auto text-white">
+      <p className="md:w-1/2 text-center md:mx-auto text-[#05386B]">
         Here you can see some of our warning students of our academy.and if you
         want you can take there place as well.if you want and if you try
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-9 py-24  ">
         <div
-          className="w-full h-[450px] overflow-hidden hover:border-[30px] border-purple-400 hover:rounded-3xl duration-1000"
+          className="w-full h-[450px] overflow-hidden"
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
@@ -35,19 +35,19 @@ const Winners = () => {
           />
         </div>
         <div
-          className="w-full h-[450px] overflow-hidden hover:border-[30px] border-purple-400 hover:rounded-3xl duration-1000"
+          className="w-full h-[450px] overflow-hidden"
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
         >
           <img
-            className="w-full h-[450px] rounded-3xl hover:scale-150 duration-1000 "
+            className="w-full h-[450px] rounded-3xl hover:scale-90 duration-1000 "
             src={img2}
             alt=""
           />
         </div>
         <div
-          className="w-full h-[450px] overflow-hidden hover:border-[30px] border-purple-400 hover:rounded-3xl duration-1000"
+          className="w-full h-[450px] overflow-hidden "
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
@@ -59,19 +59,19 @@ const Winners = () => {
           />
         </div>
         <div
-          className="w-full h-[450px] overflow-hidden hover:border-[30px] border-purple-400 hover:rounded-3xl duration-1000"
+          className="w-full h-[450px] overflow-hidden "
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
         >
           <img
-            className="w-full h-[450px] rounded-3xl hover:scale-150 duration-1000 "
+            className="w-full h-[450px] rounded-3xl hover:scale-90 duration-1000 "
             src={img4}
             alt=""
           />
         </div>
         <div
-          className="w-full h-[450px] overflow-hidden hover:border-[30px] border-purple-400 hover:rounded-3xl duration-1000"
+          className="w-full h-[450px] overflow-hidden "
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
@@ -83,13 +83,13 @@ const Winners = () => {
           />
         </div>
         <div
-          className="w-full h-[450px] overflow-hidden hover:border-[30px] border-purple-400 hover:rounded-3xl duration-1000"
+          className="w-full h-[450px] overflow-hidden "
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
         >
           <img
-            className="w-full h-[450px] rounded-3xl hover:scale-150 duration-1000 "
+            className="w-full h-[450px] rounded-3xl hover:scale-90 duration-1000 "
             src={img6}
             alt=""
           />

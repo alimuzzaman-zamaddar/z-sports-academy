@@ -4,15 +4,15 @@ import { FaIndustry, FaBrain, FaWhmcs, FaUsers } from "react-icons/fa";
 const Values = () => {
   return (
     <>
-      <div className="text-center py-8 text-white mb-5">
+      <div className="text-center py-8 text-[#05386B] mb-5">
         <h1 className="text-center font-serif font-extrabold text-5xl mb-5">
           OUR COMPANY VALUES
         </h1>
         <p className="text-xl">WE ARE ALWAYS FOCUS ON INNOVATION AND NEW TECNIC</p>
       </div>
 
-      <div className="grid md:grid-cols-2 py-5 my-10 border-[30px] border-purple-500 hover:border-purple-950 duration-1000">
-        <div className=" text-white mt-10 p-10">
+      <div className="grid md:grid-cols-2 py-5 my-10 border-[30px] border-[#05386B] hover:border-[#336495] duration-1000">
+        <div className=" text-[#05386B] mt-10 p-10">
           <div
             className="flex "
             data-aos="fade-up"
@@ -83,7 +83,7 @@ const Values = () => {
           data-aos-anchor-placement="top-center"
         >
           <img
-            className="h-[550px] w-[550px] mt-5 p-10 rounded-full border-[30px] hover:border-purple-950 duration-1000 border-purple-700 hover:drop-shadow-xl"
+            className="h-[550px] w-[550px] mt-5 p-10 rounded-full border-[30px] hover:border-[#255f98] duration-1000 border-[#05386B] hover:drop-shadow-xl"
             src="https://img.freepik.com/free-vector/summer-sports-concept_1284-9394.jpg?w=2000"
             alt=""
           />

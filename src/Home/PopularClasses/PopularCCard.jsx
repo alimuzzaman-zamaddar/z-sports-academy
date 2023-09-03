@@ -4,7 +4,7 @@ import "./PopularClasses";
 const PopularCCard = ({ pClass }) => {
   return (
     <div
-      className="p-7 shadow-2xl bg-gradient-to-r from-purple-900 via-purple-500 to-purple-900 class-card text-white"
+      className="p-7 shadow-2xl bg-slate-600 text-white"
       data-aos="flip-left"
       data-aos-easing="ease-out-cubic"
       data-aos-duration="2000"
